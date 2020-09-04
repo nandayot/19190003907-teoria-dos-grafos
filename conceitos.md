@@ -4,7 +4,7 @@ description: >-
   exercícios.
 ---
 
-# Conceitos
+# Conceitos Básicos
 
 ## Conceitos
 
@@ -38,5 +38,7 @@ Um laço ocorre quando os extremos possuem o mesmo vértice. Como se fosse um lo
 
 ![Aqui temos exemplo de uma ocorr&#xEA;ncia de la&#xE7;o.](.gitbook/assets/laco.png)
 
+### Arestas Paralelas
 
+Dizemos que arestas são paralelas quando possuem o mesmo par de vértices. Tomando como exemplo a imagem acima de laço podemos observar esse acontecimento. Dizemos que as arestas **a2** e **a3** são paralelas pois possuem os mesmo vértices de ligação **V1** e **V3**.
 

@@ -32,11 +32,9 @@ Grafos - conceitos básicos, algoritmos em grafos, árvores, grafos eulerianos e
 1. J. A. Bondy & U. S. R. Murty. ****[**Graph Theory with Applications**](https://www.zib.de/groetschel/teaching/WS1314/BondyMurtyGTWA.pdf), North-Holland, 1976
 2. Richard J. Trudeau. **Introduction to graph theory**, Dover, 1993
 3. Reinhard Diestel. [**Graph Theory**](http://www.esi2.us.es/~mbilbao/pdffiles/DiestelGT.pdf), Springer, 1997
-4. V. K. Balakrishnan. **Theory and Problems of Graph Theory**, McGraw-Hill, 1997
+4. V. K. Balakrishnan. [**Theory and Problems of Graph Theory**](https://drive.google.com/file/d/1K9i047NgMdwcPrXIIvk6N2_a1zeGyBJA/view?usp=sharing), McGraw-Hill, 1997
 
-
-
-d
+> Créditos especiais a Carla Vieira e seu repositório de ciberdemocracia que me deu inspiração para fazer este. Acesse ele [aqui](https://carlaprv.gitbook.io/ciberdemocracia/).
 
 
 

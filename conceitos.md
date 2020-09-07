@@ -42,3 +42,7 @@ Um laço ocorre quando os extremos possuem o mesmo vértice. Como se fosse um lo
 
 Dizemos que arestas são paralelas quando possuem o mesmo par de vértices. Tomando como exemplo a imagem acima de laço podemos observar esse acontecimento. Dizemos que as arestas **a2** e **a3** são paralelas pois possuem os mesmo vértices de ligação **V1** e **V3**.
 
+> Anotações feita com base nos slides de grafos do professor Marcelo Henriques de Carvalho da FACOM-UFMS.
+
+
+

@@ -74,3 +74,5 @@ Não é tão intuitivo como saber o número de vértices mas sabemos que em cada
 
 Como o número de vértices é construído pela sequência de potências de 2, conseguimos dividir o k-cubo em dois subconjuntos de $$\frac{2^k}{2}$$. Para que a bipartição seja satisfeita cada subconjunto precisa conter todas as sequências em que os bits diferem em duas posições. Fazendo a divisão desta forma, não seria possível ter arestas adjacentes dentro de uma mesmo conjunto conforme a propriedade de um k-cubo. Sendo assim, conseguimos dividir um k-cubo de tal maneira que a bipartição ocorra.
 
+> Anotações feita com base nos slides de grafos do professor Marcelo Henriques de Carvalho da FACOM-UFMS.
+

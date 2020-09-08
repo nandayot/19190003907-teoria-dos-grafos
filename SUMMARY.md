@@ -10,4 +10,6 @@
   * [Exercícios](subgrafos/exercicios.md)
 * [Grau de Vértices](grau-de-vertices/README.md)
   * [Exercícios](grau-de-vertices/exercicios.md)
+* [Caminhos e Circuitos](caminhos-e-circuitos/README.md)
+  * [Exercícios](caminhos-e-circuitos/exercicios.md)
 

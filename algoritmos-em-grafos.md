@@ -52,6 +52,36 @@ O algoritmo faz uma projeção do custo para o próximo vértice. Assim ele esco
 
 Agora a questão é: Quel é o caminho que apresentou esse menor custo? Para descobrirmos isso fazemos o "caminho inverso". Como se voltássemos para a origem de acordo com os custos finais. Substraindo o custo em cada caminho com ocusto final dos vértices adjacentes e escolhendo o caminho que o cálculo bate com o custo do vértice até cehgarmos na origem.
 
+#### Achar o caminho mínimo do grafo abaixo
+
+![](.gitbook/assets/algoritmo-djisktra.jpg)
+
+Utilizando o algoritmo de Dijkstra fazemos a busca em largura pelos vértices visitando os custos menores e atualizando os custo durante o percurso caso necessário.
+
+![](.gitbook/assets/algoritmo-djisktra-final.jpg)
+
+Descobrimos que o custo mínimo final é 13; Agora qual é o caminho em que o custo final é 13? Fazemos o caminho inverso percorrendo os custos menores.
+
+![](.gitbook/assets/algoritmo-dijkstra-caminho-final.jpg)
+
+Como descrevemos este algoritmo de forma funcional?
+
+1. Primeiramente a distância $$d(u) \leftarrow 0$$ , e os vértices alcançados recebem o conjunto ds vértices \( $$S \leftarrow \{u\}$$ \);
+2. Para cada $$v \in (V(G) - \{u\})$$ faça: $$d(v) \leftarrow c(u,v)$$ . Ou seja, para cada vértice pertencente ao grafo que seja diferente de $$u$$ \(pois os vértices adjacentes a ele é o próprio custo já que ele é 0\), a distância de $$v$$ é o custo de $$(u,v).$$ 
+3. Enquanto $$S \not= V(G)$$ faça: \(Ou seja, quando o S ainda não tiver chego no final do percurso\)
+   1. escolha $$v \in V(G) - S $$ tal que $$d(v)$$ seja mínimo. Ou seja, olhe para os vértices adjacente e percorre aquele com o menor custo.
+   2. $$S \leftarrow S \cup {v}$$. Ou seja, o conjunto dos vértices de menor custo será adicionado o $$v$$ .
+   3. Para cada $$w \in V(G) - S $$faça:
+      1. $$d(w) \leftarrow min \{d(w), d(v) + c(v,w)\}$$ . Ou seja, olhe para os próximos vértices adjacente e os ainda não visitados e faça com que $$d(w)$$ receba o mínimo.
+
+### Corretude
+
+#### Teorema
+
+O algoritmo de Dijkstra determina corretamente as distâncias de $$u$$ a cada vértice de $$V( G )$$ .
+
+A prova para esse teorma é usarmos a prova por contradição.
+
 ## Algoritmo de Bellman-Ford-Moore
 
 

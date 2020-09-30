@@ -34,17 +34,35 @@ Componentes de um grafo são subgrafos conexos maximais. Ou seja, um caminho em 
 
 ### Passeio fechado
 
+Um passeio é fechado quando sua origem coincide com seu término. Um caminho fechado é chamado de circuito. Ou seja, um caminho \(quando um passeio não repete vértices\) onde sua origem coincide com o seu término, é um circuito.
 
+Agora que sabemos a definição de circuitos, eles possuem .relação o conceito de grafos bipartidos. E qual relação é essa?
 
-## Lema
+## Lema 1
+
+Seja $$ G = (X, Y)$$ um grafo bipartido e $$C$$ um circuito em $$G$$ . Então $$C$$é par.
+
+Ou seja. Todo circuito que pertence a um grafo bipartido, o comprimento dele sempre é par.
 
 ### Prova
 
-
+![](../.gitbook/assets/circuitoprova_page_1.jpg)
 
 ## Lema 2
 
+Seja$$G$$um grafo que não possui circuito ímpar. Então $$G$$ é bipartido.
+
 ### Prova
+
+![](../.gitbook/assets/provalema2.jpg)
+
+
+
+Combinando os dois lemas vistos chegamos no Teorema abaixo.
+
+## Teorema
+
+Um grafo é bipartido se, e somente se, não possui circuito ímpar.
 
 
 

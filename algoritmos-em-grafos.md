@@ -82,9 +82,25 @@ O algoritmo de Dijkstra determina corretamente as distâncias de $$u$$ a cada v�
 
 A prova para esse teorma é usarmos a prova por contradição.
 
+O algoritmo de Dijkstra não funciona para arestas com custo negativo e por isso utilizamos o próximo algoritmo para resolvermos essa questão.
+
 ## Algoritmo de Bellman-Ford-Moore
 
+Considere $$D = (V,A)$$ , um grafo dirigido \(grafo que possui direção em suas setas\), com custos negativos nas arestas mas sem circuito negativo. E seja $$u$$ um vértice de $$D$$ . O Algoritmo de Bellman-Ford-Moore \(1965.1958\) determina a distancia de $$u$$ aos demais vértices de $$D$$.
 
+No ínicio a origem do caminho comece com 0 e os demais vértices são setados com $$\infty$$ para simbolizar um número muito grande pois ele será substituído no decorrer do algoritmo.
+
+O algoritmo se resume em uma iteração de uma estrutura de repetição: Enquanto existir um arco tal que a origem somado com o custo do arco seja menor que o destino, o destino é atualizado.
+
+Segue exemplo
+
+![Note que os demais v&#xE9;rtices est&#xE3;o como &quot;infinito&quot; no come&#xE7;o](.gitbook/assets/bellman.jpg)
+
+Fazendo o laço iterativo conforme descrito, vamos substituindo cada arco quando o vértice destino for maior que o custo mais o vértice de origem. Assim:
+
+![](.gitbook/assets/bellman-final.jpg)
+
+Note que todos os vértices já estão atualizados e mesmo repetindo o processo, nada muda.
 
 ## Algoritmo de Floyd – Warshall
 

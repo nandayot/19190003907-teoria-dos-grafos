@@ -86,7 +86,7 @@ O algoritmo de Dijkstra não funciona para arestas com custo negativo e por isso
 
 ## Algoritmo de Bellman-Ford-Moore
 
-Considere $$D = (V,A)$$ , um grafo dirigido \(grafo que possui direção em suas setas\), com custos negativos nas arestas mas sem circuito negativo. E seja $$u$$ um vértice de $$D$$ . O Algoritmo de Bellman-Ford-Moore \(1965.1958\) determina a distancia de $$u$$ aos demais vértices de $$D$$.
+Considere $$D = (V,A)$$ , um grafo dirigido \(grafo que possui direção em suas setas\), com custos negativos nas arestas mas sem circuito negativo. E seja $$u$$ um vértice de $$D$$ . O Algoritmo de Bellman-Ford-Moore \(1955.1958\) determina a distancia de $$u$$ aos demais vértices de $$D$$.
 
 No ínicio a origem do caminho comece com 0 e os demais vértices são setados com $$\infty$$ para simbolizar um número muito grande pois ele será substituído no decorrer do algoritmo.
 
@@ -102,5 +102,59 @@ Fazendo o laço iterativo conforme descrito, vamos substituindo cada arco quando
 
 Note que todos os vértices já estão atualizados e mesmo repetindo o processo, nada muda.
 
+Olhando de forma mais funcional, o algoritmo funciona desta forma:
+
+1. Para cada vértice pertencente ao Grafo faça $$d(v)$$ receber infinito;
+2. Faça $$d(u)$$receber 0;
+3. Para $$i = 1$$ até $$|V(G)|-1$$ faça
+   1. Olhe para cada arco $$(v,w) \in E(G)$$ faça
+   2. Se o custo do destino for maior que a soma do custo do arco mais o custo da origem então é preciso atualizar o custo. $$d(w) \leftarrow d(v)+c(v,w)$$ .
+4. Para cada arco $$(v,w) \in E(G)$$faça
+   1. Se $$d(w) > d(v)+c(v,w)$$então retorne \("impossível"\); Isso quer dizer que ele achou um circuito negativo, pois ele passou de novo pelo grafo e percebeu que precisa atualizar o custo, ou seja, ele entraria num loop infinito.
+
+Observação: esse algoritmo não se restringe a grafos extritamnte com arestas negativas, ou seja, podemos utilizá-lo em grafos com custos exclusivamente positivos.
+
+## Qual utilizar?
+
+Sabemos agora que podemos utilizar o algoritmo de Bellman-Ford-Moore para grafos que não possuem arestas negativas, qual utilizar nessa ocasião? Dijkstra ou Bellman-Ford? Analisando o custo de cada algoritmo chegamos numa conclusão que Dijkstra é o mais eficiente com tempo **quadrático** de execução, em contrapartida, Bellman-Ford tem custo **cúbido**.
+
 ## Algoritmo de Floyd – Warshall
+
+Considere $$D = (V,A)$$ , um grafo dirigido \(grafo que possui direção em suas setas\), com custos negativos nas arestas mas sem circuito negativo. O Algoritmo de Floyd - Warshall \(1959.1962\) determina a distancia entre cada **par** de vértices de $$D$$ .
+
+O algoritmo mantém um distância parcial entre cada par de vértices e vai consertando até achar o valor correto.
+
+Suponha que os vértices de D estejam numerados de 1 a $$n$$ . Para cada par de vértices $$i$$ e $$j$$ , e um inteiro $$k$$ , um caminho mínimo entre $$i$$ e $$j$$ que utiliza somente vértices internos do conjunto $$\{ 1, 2,...,k \}$$ pode ser:  
+
+1. um caminho que possui vértices internos no conjunto $$\{ 1, 2,...,k-1 \}$$ \(caminho em que não se utiliza o inteiro $$k$$ \); ou
+2. um caminho de ****$$i$$ a $$k$$ concatenando com um de $$k$$ a $$j$$, onde ambos utilizam vértices internos do conjunto $$\{ 1, 2,...,k-1 \}$$.
+
+Analisando a lógica do algoritmo, já dá para entender que é um algoritmo que utiliza recursão. Como queremos percorrer todo o grafo o k escolhido é $$n$$. Começamos a percorrer com valor inicial 0 sendo assim a função da distância é $$f(i,j,k) = f(i,j,0) = c(i,j)$$ . Colocando numa fórmula geral, temos:
+
+$$
+f(i, j,k) = min\{f(i,j,k), f(i, k, k-1) + f(k, j, k-1)\}
+$$
+
+Mas queremos saber o valor de $$f(i,j,n)$$ . Vejamos isso num exemplo:
+
+![](.gitbook/assets/floydd.jpg)
+
+Agora olhemos para o algoritmo:
+
+1. Para cada $$i= 1, 2,...,n $$ faça $$d(i, i) ← 0;$$ \(o custo do próprio vértice é 0;
+2. Para cada par i, j faça $$d(i, j)←c(i, j);$$ A distanca de i, j recebe o custo do arco de i,j;
+3. Para k = 1 até n faça \(um laço de repetição que coloca cada vértice como um vértice interno\)
+   1. Para i = 1 até n faça \(os dois laços internos faz a combinação de todos os possíveis caminhos\)
+      1. Para j = 1 até n faça
+         1. Se $$d(i, k) +d(k, j) < d(i, j)$$ ; Ou seja, se a soma de um caminho com um vértice interno for menor que o próprio caminho sem ele, substitui o custo;
+
+
+
+  
+
+
+
+ 
+
+
 

@@ -44,3 +44,7 @@ Um grafo é _k-_regular se $$d ( v) = k $$ para todo vértice do grafo. Um grafo
 
 Ou seja, um grafo é regular se todos os graus de seus vértices forem iguais.
 
+
+
+> Anotações feita com base nos slides de grafos do professor Marcelo Henriques de Carvalho da FACOM-UFMS.
+

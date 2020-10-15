@@ -12,5 +12,6 @@
   * [Exercícios](grau-de-vertices/exercicios.md)
 * [Caminhos e Circuitos](caminhos-e-circuitos/README.md)
   * [Exercícios](caminhos-e-circuitos/exercicios.md)
-* [Algoritmos em Grafos](algoritmos-em-grafos.md)
+* [Algoritmos em Grafos](algoritmos-em-grafos/README.md)
+  * [Exercícios](algoritmos-em-grafos/exercicios.md)
 

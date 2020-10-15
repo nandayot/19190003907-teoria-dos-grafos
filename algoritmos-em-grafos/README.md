@@ -4,7 +4,7 @@
 
 Tem várias formas de representarmos um grafo dentro da Computação. Uma delas é a Matriz de Incidência. Onde as colunas são as arestas e as linhas os vértices. E assim vai computando como 1, os pares em que a aresta incide no vértice.
 
-![](.gitbook/assets/matriz-de-incidencia.png)
+![](../.gitbook/assets/matriz-de-incidencia.png)
 
 Créditos imagem: [https://medium.com/xp-inc/grafos-teoria-e-aplica%C3%A7%C3%B5es-2a87444df855](https://medium.com/xp-inc/grafos-teoria-e-aplica%C3%A7%C3%B5es-2a87444df855)
 
@@ -18,7 +18,7 @@ Quando falamos em Busca, queremos dizer que temos de visitar todos os vértcies 
 
 Escolha, primeiramente, um vértice qualquer, visita este vértice. Logo em seguida, olhe para seus vértices adjacentes e os visita. Em seguida, olhe para os adjacentes dos adjacentes e os visita. E assim por diante.
 
-![Cr&#xE9;ditos: Gustavo Pantuza](.gitbook/assets/buscaemlargur.txt)
+![Cr&#xE9;ditos: Gustavo Pantuza](../.gitbook/assets/buscaemlargur.txt)
 
 A estrutura de dados que melhor representa uma busca em largura é a FILA com o método FIFO \(First In First Out\). A ideia do algoritmo é:
 
@@ -32,7 +32,7 @@ Escolha um vértice qualquer $$u$$em G e marque como visitado. Agora olhe soment
 
 Quando isso acontece, ele volta para o vértice anterior e olha os seus adjacentes que ainda não foram visitados, caso exista algum, E o processo continua desta forma.
 
-![Cr&#xE9;ditos: Gustavo Pantuza](.gitbook/assets/buscaemprofundiade.txt)
+![Cr&#xE9;ditos: Gustavo Pantuza](../.gitbook/assets/buscaemprofundiade.txt)
 
 A estrutura desse algoritmo é diametralmente oposta ao da Busca em Largura, que é a Pilha com a técnica FILO \(First In Last Out\). Que segue esta lógica:
 
@@ -54,15 +54,15 @@ Agora a questão é: Quel é o caminho que apresentou esse menor custo? Para des
 
 #### Achar o caminho mínimo do grafo abaixo
 
-![](.gitbook/assets/algoritmo-djisktra.jpg)
+![](../.gitbook/assets/algoritmo-djisktra.jpg)
 
 Utilizando o algoritmo de Dijkstra fazemos a busca em largura pelos vértices visitando os custos menores e atualizando os custo durante o percurso caso necessário.
 
-![](.gitbook/assets/algoritmo-djisktra-final.jpg)
+![](../.gitbook/assets/algoritmo-djisktra-final.jpg)
 
 Descobrimos que o custo mínimo final é 13; Agora qual é o caminho em que o custo final é 13? Fazemos o caminho inverso percorrendo os custos menores.
 
-![](.gitbook/assets/algoritmo-dijkstra-caminho-final.jpg)
+![](../.gitbook/assets/algoritmo-dijkstra-caminho-final.jpg)
 
 Como descrevemos este algoritmo de forma funcional?
 
@@ -94,11 +94,11 @@ O algoritmo se resume em uma iteração de uma estrutura de repetição: Enquant
 
 Segue exemplo
 
-![Note que os demais v&#xE9;rtices est&#xE3;o como &quot;infinito&quot; no come&#xE7;o](.gitbook/assets/bellman.jpg)
+![Note que os demais v&#xE9;rtices est&#xE3;o como &quot;infinito&quot; no come&#xE7;o](../.gitbook/assets/bellman.jpg)
 
 Fazendo o laço iterativo conforme descrito, vamos substituindo cada arco quando o vértice destino for maior que o custo mais o vértice de origem. Assim:
 
-![](.gitbook/assets/bellman-final.jpg)
+![](../.gitbook/assets/bellman-final.jpg)
 
 Note que todos os vértices já estão atualizados e mesmo repetindo o processo, nada muda.
 
@@ -137,7 +137,7 @@ $$
 
 Mas queremos saber o valor de $$f(i,j,n)$$ . Vejamos isso num exemplo:
 
-![](.gitbook/assets/floydd.jpg)
+![](../.gitbook/assets/floydd.jpg)
 
 Agora olhemos para o algoritmo:
 

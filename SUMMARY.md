@@ -14,4 +14,5 @@
   * [Exercícios](caminhos-e-circuitos/exercicios.md)
 * [Algoritmos em Grafos](algoritmos-em-grafos/README.md)
   * [Exercícios](algoritmos-em-grafos/exercicios.md)
+* [Árvores](arvores.md)
 

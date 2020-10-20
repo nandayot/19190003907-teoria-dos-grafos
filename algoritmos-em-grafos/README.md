@@ -28,7 +28,7 @@ Coloce na fila um vértice qualquer $$u$$ de $$G$$ e marque como visitado; Enqua
 
 Já a Busca em Profundidade é justamente ao contário da Busca em Largura. Como a busca em Largura olha de forma **macro**. A Busca em Profundidade olha de forma **micro**. Sendo assim o algoritmo funciona assim:
 
-Escolha um vértice qualquer $$u$$em G e marque como visitado. Agora olhe somente para um vértice adjacente que ainda não foi visitado, e visita ele. Olha olhe para um adjacente deste vértice no qual ainda não foi visita e o visita. E assim por diante. O algoritmo mergulha dentro do Grafo até um ponto onde um determinado vértice não possui nenhum vértice adjacente. 
+Escolha um vértice qualquer $$u$$em G e marque como visitado. Agora olhe somente para um vértice adjacente que ainda não foi visitado, e visita ele. Olhe para um adjacente deste vértice no qual ainda não foi visitado e o visita. E assim por diante. O algoritmo mergulha dentro do Grafo até um ponto onde um determinado vértice não possui nenhum vértice adjacente. 
 
 Quando isso acontece, ele volta para o vértice anterior e olha os seus adjacentes que ainda não foram visitados, caso exista algum, E o processo continua desta forma.
 
@@ -48,9 +48,9 @@ Uma solução seria trocar os custos por caminhos de mesmo custo. Exemplo: tranf
 
 O problema do caminho mínimo é resolvido utilizando o algoritmo chamado Algoritmo de Dijkstra \(1959\). Ele funciona como um generalização do algoritmo de busca em largura. 
 
-O algoritmo faz uma projeção do custo para o próximo vértice. Assim ele escolher o vértice que apontou-se ser o de menor custo. Depois de atinjido temos que atualizar os custos dos vértcies **adjacentes** \(ainda não atinjidos\) e  assim por diante. Relizando esse procedimentos descobrimos o custo de menor caminho. 
+O algoritmo faz uma projeção do custo para o próximo vértice. Assim ele escolhe o vértice que apontou-se ser o de menor custo. Depois de atinjí-lo temos que atualizar os custos dos vértcies **adjacentes** \(ainda não atingidos\) e  assim por diante. Relizando esse procedimentos descobrimos o custo de menor caminho. 
 
-Agora a questão é: Quel é o caminho que apresentou esse menor custo? Para descobrirmos isso fazemos o "caminho inverso". Como se voltássemos para a origem de acordo com os custos finais. Substraindo o custo em cada caminho com ocusto final dos vértices adjacentes e escolhendo o caminho que o cálculo bate com o custo do vértice até cehgarmos na origem.
+Agora a questão é: Qual é o caminho que apresentou esse menor custo? Para descobrirmos isso fazemos o "caminho inverso". Como se voltássemos para a origem de acordo com os custos finais. Substraindo o custo em cada caminho com o custo final dos vértices adjacentes e escolhendo o caminho que o cálculo bate com o custo do vértice até chegarmos na origem.
 
 #### Achar o caminho mínimo do grafo abaixo
 
@@ -80,7 +80,7 @@ Como descrevemos este algoritmo de forma funcional?
 
 O algoritmo de Dijkstra determina corretamente as distâncias de $$u$$ a cada vértice de $$V( G )$$ .
 
-A prova para esse teorma é usarmos a prova por contradição.
+A prova para esse teorma é usarmos contradição.
 
 O algoritmo de Dijkstra não funciona para arestas com custo negativo e por isso utilizamos o próximo algoritmo para resolvermos essa questão.
 
@@ -112,7 +112,7 @@ Olhando de forma mais funcional, o algoritmo funciona desta forma:
 4. Para cada arco $$(v,w) \in E(G)$$faça
    1. Se $$d(w) > d(v)+c(v,w)$$então retorne \("impossível"\); Isso quer dizer que ele achou um circuito negativo, pois ele passou de novo pelo grafo e percebeu que precisa atualizar o custo, ou seja, ele entraria num loop infinito.
 
-Observação: esse algoritmo não se restringe a grafos extritamnte com arestas negativas, ou seja, podemos utilizá-lo em grafos com custos exclusivamente positivos.
+Observação: esse algoritmo não se restringe a grafos extritamente com arestas negativas, ou seja, podemos utilizá-lo em grafos com custos exclusivamente positivos.
 
 ## Qual utilizar?
 
@@ -141,9 +141,9 @@ Mas queremos saber o valor de $$f(i,j,n)$$ . Vejamos isso num exemplo:
 
 Agora olhemos para o algoritmo:
 
-1. Para cada $$i= 1, 2,...,n $$ faça $$d(i, i) ← 0;$$ \(o custo do próprio vértice é 0;
+1. Para cada $$i= 1, 2,...,n $$ faça $$d(i, i) ← 0;$$ \(o custo do próprio vértice é 0\);
 2. Para cada par i, j faça $$d(i, j)←c(i, j);$$ A distanca de i, j recebe o custo do arco de i,j;
-3. Para k = 1 até n faça \(um laço de repetição que coloca cada vértice como um vértice interno\)
+3. Para k = 1 até n faça: \(um laço de repetição que coloca cada vértice como um vértice interno\)
    1. Para i = 1 até n faça \(os dois laços internos faz a combinação de todos os possíveis caminhos\)
       1. Para j = 1 até n faça
          1. Se $$d(i, k) +d(k, j) < d(i, j)$$ ; Ou seja, se a soma de um caminho com um vértice interno for menor que o próprio caminho sem ele, substitui o custo;

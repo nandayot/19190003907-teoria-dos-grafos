@@ -30,6 +30,38 @@ Um teorema fundamental, devido a **Kuratowski** \(1930\), afirma que a recíproc
 
 Dessa forma o $$K_5$$e o $$K_{3,3}$$ são a essência da não-planaridade. Conseguimos provar que um grafo é não-planar quando o grafo contém ou o $$K_{3,3}$$ ou o $$K_5$$**.**
 
+## Fórmula de Euler
+
+Um grafo planar imerso no plano será chamado de grafo plano. Euler \(1752\) estabeleceu uma fórmula bem simples relacionando o número de vértices \( $$v$$ \), arestas \( $$a$$ \) e faces \( $$f$$ \) de um grafo conexo e plano.
+
+### Teorema
+
+Se G é um grafo conexo e plano então:
+
+$$
+v(G) − a(G) + f(G)=2
+$$
+
+### Colorário
+
+Toda imersão no plano \(desenho no plano\) de um grafo conexo planar tem o **mesmo** número de faces.
+
+### Grau de face
+
+O **grau de uma face** $$f$$ , denotado por $$d(f)$$ , é o número de arestas que limitam a face $$f$$ \(cada aresta de corte é contada 2 vezes\). Logo,
+
+$$
+\sum_{f \in \text{face}}d(f) = 2a
+$$
+
+### Colorário
+
+Se $$G$$ é um grafo planar simples com pelo menos três vértices, então;
+
+$$
+a(G) ≤ 3v(G) − 6
+$$
+
 
 
 > Anotações feita com base nos slides de grafos do professor Marcelo Henriques de Carvalho da FACOM-UFMS

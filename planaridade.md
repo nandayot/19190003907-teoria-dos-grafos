@@ -62,6 +62,12 @@ $$
 a(G) ≤ 3v(G) − 6
 $$
 
+### Colorário 2
+
+Se $$G$$ é um grafo planar simples então $$δ ≤ 5$$ .
+
+
+
 
 
 > Anotações feita com base nos slides de grafos do professor Marcelo Henriques de Carvalho da FACOM-UFMS

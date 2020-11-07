@@ -14,7 +14,7 @@ O único argumento usado para provar este teorema é dizermos que quando temos u
 
 #### Prova
 
-TODO
+Ver Exercicio 1.
 
 ## Subdivisão
 

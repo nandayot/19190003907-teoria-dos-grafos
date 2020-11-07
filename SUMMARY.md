@@ -16,5 +16,6 @@
   * [Exercícios](algoritmos-em-grafos/exercicios.md)
 * [Árvores](arvores/README.md)
   * [Exercícios](arvores/exercicios.md)
-* [Planaridade](planaridade.md)
+* [Planaridade](planaridade/README.md)
+  * [Exercícios](planaridade/exercicios.md)
 

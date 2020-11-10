@@ -18,4 +18,5 @@
   * [Exercícios](arvores/exercicios.md)
 * [Planaridade](planaridade/README.md)
   * [Exercícios](planaridade/exercicios.md)
+* [Grafos Eulerianos e Hamiltonianos](grafos-eulerianos-e-hamiltonianos.md)
 

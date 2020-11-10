@@ -66,6 +66,40 @@ $$
 
 Se $$G$$ é um grafo planar simples então $$δ ≤ 5$$ .
 
+### Colorário 3
+
+$$K_5$$ é não planar
+
+Prova: Suponha por contradição que $$K_5$$ é planar, então
+
+$$
+10 = a(K_5) ≤ 3v(K_5) − 6=9
+$$
+
+O que é um absurdo.
+
+### Colorário 4
+
+$$K_{3,3}$$ é não planar.
+
+Prova: Suponha por contradição que $$K_{3,3}$$é planar. Como ele não tem circuito de comprimento $$\geq 4$$ , então:
+
+$$
+4f(G) ≤ \sum d(f)=2a(G) = 18 ⇒ f(G) ≤ 4
+$$
+
+Utilizando a fórmula de Euler, temos:
+
+$$
+2 = v(G) − a(G) + f(G) ≤ 6 − 9+4=1
+$$
+
+O que é um absurdo. Logo, $$K_{3,3}$$é não planar.
+
+## Pontes
+
+## Continua..
+
 
 
 

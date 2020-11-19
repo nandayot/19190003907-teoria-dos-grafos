@@ -32,5 +32,35 @@ Existe um algoritmo bem simples que encontra uma trilha fechada de Euler em um g
 
 Agora, **se G não é euleriano**, certamente o carteiro terá que passar mais de uma vez por algumas ruas. Em outras palavras, um percurso ótimo passará mais de uma vez por algumas arestas. A pergunta então é: já que devemos passar mais de uma vez por algumas arestas, quais escolheremos?
 
+
+
+## Grafos Hamiltonianos
+
+Um circuito que contém todos os vértices de um grafo é chamado circuito hamiltoniano. Um grafo é hamiltoniano se ele contém um circuito hamiltoniano. Por exemplo, os grafos completos com pelo menos três vértices são hamiltonianos.
+
+**Problema**: Decidir se um grafo é hamiltoniano
+
+## Teorema
+
+Se $$G$$ é hamiltoniano então para todo subconjunto próprio $$S$$ de $$V (G)$$
+
+$$
+w(G − S) ≤ |S|
+$$
+
+Esta condição, no entanto, não é suficiente. Por exemplo, o grafo de Petersen satisfaz a condição do teorema mas não é hamiltoniano
+
+Passaremos agora a discutir condições suficientes para que um grafo seja hamiltoniano. Claramente, é suficiente limitarmos os nossos estudos para grafos simples. Iniciaremos com um resultado de Bondy e Chvátal \(1976\).
+
+## Teorema
+
+Seja $$G$$ um grafo simples com $$n$$ vértices e sejam $$u$$ e $$v$$ dois vértices não adjacentes em $$G$$ tais que
+
+$$
+d(u) + d(v) ≥ n
+$$
+
+Então $$G$$ é hamiltoniano se, e somente se, $$G + (u, v) $$ é hamiltoniano.
+
 > Anotações feita com base nos slides de grafos do professor Marcelo Henriques de Carvalho da FACOM-UFMS
 

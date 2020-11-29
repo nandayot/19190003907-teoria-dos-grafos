@@ -96,12 +96,6 @@ $$
 
 O que é um absurdo. Logo, $$K_{3,3}$$é não planar.
 
-## Pontes
-
-## Continua..
-
-
-
 
 
 > Anotações feita com base nos slides de grafos do professor Marcelo Henriques de Carvalho da FACOM-UFMS

@@ -16,7 +16,7 @@ Um grafo conexo é euleriano se, e somente se, todo vértice tem grau par.
 
 ### Prova
 
-![](.gitbook/assets/euler.jpg)
+![](../.gitbook/assets/euler.jpg)
 
 ### Corolario
 

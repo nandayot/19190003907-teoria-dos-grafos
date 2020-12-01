@@ -16,5 +16,11 @@ Toda árvore com pelo menos dois vértices tem pelo menos dois vértices de grau
 
 ![](../.gitbook/assets/arvoresex1_2.jpg)
 
+## 3\).
+
+#### Desenhe todas as árvores não isomorfas com 6 vértices
+
+![](../.gitbook/assets/arvoresex1_3.jpg)
+
 
 
